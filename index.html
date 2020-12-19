@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación técnica</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/css/css.css">
+
+</head>
+<body>
+
+    <nav id="navbar">
+      <header>EJS Documentación</header>
+      <ul>
+        <li><a class="nav-link active" href="#¿Qué_es_EJS?">¿Qué es EJS?</a></li>
+        <li><a class="nav-link" href="#Caracteristicas">Caracteristicas</a></li>
+        <li><a class="nav-link" href="#Instalar_en_pc">Instalar en pc</a></li>
+        <li><a class="nav-link" href="#Utilizar">Utilizar</a></li>
+        <li><a class="nav-link" href="#Soporte_de_navegador">Soporte de navegador</a></li>
+        <li><a class="nav-link" href="#Ejemplo">Ejemplo</a></li>
+        <li><a class="nav-link" href="#Uso">Uso</a></li>
+        <li><a class="nav-link" href="#Opciones">Opciones</a></li>
+        <li><a class="nav-link" href="#Etiquetas">Etiquetas</a></li>
+        <li><a class="nav-link" href="#Incluye">Incluye</a></li>
+        <li><a class="nav-link" href="#Diseños">Diseños</a></li>
+        <li><a class="nav-link" href="#Soporte_del_lado_del_cliente">Soporte del lado del cliente</a></li>
+        <li><a class="nav-link" href="#Licencia">Licencia</a></li>
+      </ul>
+    </nav>
+
+  <main id="main-doc">
+    <div id="inicio">
+      <h1 style="font-size: 98px;"><span style="font-size: 100%;">&lt;%= EJS %&gt;</span></h1>
+    </div>
+    <section class="main-section" id="¿Qué_es_EJS?">
+      <header>¿Qué es EJS?</header>
+      <article>
+        <p>
+          ¿Para qué sirve la "E"? "¿Incrustado?" Podría ser. ¿Qué tal "Eficaz", "Elegante" o simplemente 
+          "Fácil"? EJS es un lenguaje de plantillas simple que le permite generar marcado HTML con JavaScript 
+          simple. Sin religiosidad sobre cómo organizar las cosas. Sin reinvención de la iteración y el flujo de 
+          control. Es simplemente JavaScript.
+        </p>
+
+        <div class="row">
+
+          <div class="col-xl-4 col-md-3 mb-2">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <p>
+                    <h4>Utilice JavaScript simple</h4>
+                    <ul>
+                      <li>
+                        Nos encanta JavaScript. Es un idioma totalmente amigable. 
+                        Todos los lenguajes de plantillas llegan a ser Turing completos. 
+                        ¡Simplemente elimine el intermediario y use JS!
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-3 mb-2">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <p>
+                    <h4>Tiempo de desarrollo rápido</h4>
+                    <ul>
+                      <li>
+                        No pierda tiempo y atención averiguando una nueva 
+                        sintaxis arcana debido a la 'elegancia', o cómo 
+                        preprocesar sus datos para que realmente se procesen correctamente.
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-3 mb-2">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <p>
+                    <h4>Sintaxis simple</h4>
+                    <ul>
+                      <li>
+                        Código JavaScript en etiquetas scriptlet sencillas y directas.
+                        ¡Simplemente escriba JavaScript que emita el HTML que desea y haga el trabajo!
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-3 mb-2">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <p>
+                    <h4>Fácil depuración</h4>
+                    <ul>
+                      <li>
+                        Es fácil depurar errores de EJS: sus errores son excepciones
+                         simples de JavaScript, con números de línea de plantilla incluidos.
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-3 mb-2">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <p>
+                    <h4>Desarrollo activo</h4>
+                    <ul>
+                      <li>
+                        EJS tiene una gran comunidad de usuarios activos y la biblioteca 
+                        está en desarrollo activo. Nos complace responder 
+                        a sus preguntas o brindarle ayuda.
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Caracteristicas">
+      <header>Caracteristicas</header>
+      <article>
+        <p>
+          <ul>
+            <li>Rápida compilación y renderizado</li>
+            <li>Etiquetas de plantilla simples: &lt;%%&gt;</li>
+            <li>Delimitadores personalizados (p. Ej., Utilice [??] En lugar de &lt;%%&gt;)</li>
+            <li>La sub-plantilla incluye</li>
+            <li>Se envía con CLI</li>
+            <li>Soporte para navegador y servidor JS</li>
+            <li>Almacenamiento en caché estático de JavaScript intermedio</li>
+            <li>Almacenamiento en caché estático de plantillas</li>
+            <li>Cumple con el sistema Express View</li>
+          </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Instalar_en_pc">
+      <header>Instalar en pc</header>
+      <article>
+        <p>Es fácil instalar EJS con NPM.</p>
+        <div class="install">
+          <p style="color: aliceblue; margin-left: 10px;">$ npm install ejs</p>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Utilizar">
+      <header>Utilizar</header>
+      <article>
+        <p>Pase a EJS una cadena de plantilla y algunos datos. BOOM, tienes algo de HTML.</p>
+        <div class="install">
+          <code>
+            let ejs = require('ejs');
+            let people = ['geddy', 'neil', 'alex'];
+            let html = ejs.render('<%= people.join(", "); %>', {people: people});
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Soporte_de_navegador">
+      <header>Soporte de navegador</header>
+      <article>
+        <p>Descargue una compilación de navegador de la última versión y utilícela en una etiqueta de script.</p>
+        <div class="install">
+          <code>
+            &lt;script src="ejs.js"&gt; &lt;/script&gt;
+            &lt;script&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let people = ['geddy', 'neil', 'alex'];
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let html = ejs.render('&lt;%= people.join(", "); %&gt;', {people: people});
+            &lt;/script&gt;
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Ejemplo">
+      <header>Ejemplo</header>
+      <article>
+        <div class="install">
+          <code>
+            &lt;% if (user) { %&gt;
+            &lt;h2&gt;&lt;%= user.name %&lt;/h2&gt;
+            &lt;% } %&gt;
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Uso">
+      <header>Uso</header>
+      <article>
+        <p>Descargue una compilación de navegador de la última versión y utilícela en una etiqueta de script.</p>
+        <div class="install">
+          <code>
+            let template = ejs.compile(str, options);
+            template(data);
+            ejs.render(str, data, options);
+            ejs.renderFile(filename, data, options, function(err, str){
+            });
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Opciones">
+      <header>Opciones</header>
+      <article>
+        <p>
+          <ul>
+            <li>cache Las funciones compiladas se almacenan en caché, requiere filename</li>
+            <li>filenameUsado por cachepara claves de caché y para incluye</li>
+            <li>rootEstablezca la raíz del proyecto para las inclusiones con una ruta absoluta (por ejemplo, /file.ejs).
+              Puede ser una matriz para intentar resolver la inclusión de varios directorios.</li>
+            <li>views Una matriz de rutas para usar al resolver inclusiones con rutas relativas.</li>
+            <li>context Contexto de ejecución de la función</li>
+            <li>compileDebugCuando falseno se compila la instrumentación de depuración</li>
+            <li>client Devuelve la función compilada independiente</li>
+            <li>delimiter</li>
+            <li>openDelimiter</li>
+            <li>closeDelimiter '/ li></li>
+            <li>debug Cuerpo de función generado de salidas</li>
+            <li>strict Cuando se establece en "verdadero", la función generada está en modo estricto</li>
+            <li>_withSi usar o no with() {}constructos. Si falseentonces los locales se almacenarán en el localsobjeto. (Implica `- estricto`)</li>
+            <li>localsNameNombre que se utilizará para el objeto que almacena variables locales cuando no se utilice withValores predeterminados paralocals</li>
+            <li>rmWhitespaceElimine todos los espacios en blanco seguros para eliminar, incluidos los espacios en blanco iniciales y finales. También permite una versión más segura de -%>slurping de línea para todas las etiquetas scriptlet (no elimina las nuevas líneas de etiquetas en el medio de una línea).</li>
+            <li>escapeLa función de escape utilizada con &lt;%=construct. Se utiliza en el renderizado y se .toString()edita en la generación de funciones de cliente. (De forma predeterminada, escapa a XML).</li>
+            <li>outputFunctionNameEstablezca una cadena (por ejemplo, 'echo'o 'print') para que una función imprima la salida dentro de las etiquetas scriptlet.</li>
+            <li>asyncCuando true, EJS usará una función asíncrona para renderizar. (Depende del soporte async / await en el tiempo de ejecución de JS.</li>
+          </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Etiquetas">
+      <header>Etiquetas</header>
+      <p>
+        <ul>
+          <li>&lt;% Etiqueta 'Scriptlet', para control de flujo, sin salida</li>
+          <li>&lt;%_ Etiqueta Scriptlet 'Whitespace Slurping', elimina todos los espacios en blanco antes de ella</li>
+          <li>&lt;%= Envía el valor a la plantilla (HTML escapado)</li>
+          <li>&lt;%- Envía el valor sin escape a la plantilla</li>
+          <li>&lt;%# Etiqueta de comentario, sin ejecución, sin salida</li>
+          <li>&lt;%% Genera un literal '&lt;%'</li>
+          <li>%&gt; Etiqueta final simple</li>
+          <li>-%&gt; Etiqueta de modo de recorte ('newline slurp'), recortes después de la nueva línea</li>
+          <li>_%&gt; Etiqueta final 'Whitespace Slurping', elimina todos los espacios en blanco después de ella</li>
+        </ul>
+      </p>
+      </article>
+    </section>
+    <section class="main-section" id="Incluye">
+      <header>Incluye</header>
+      <article>
+        <p>Las inclusiones son relativas a la plantilla con la includeconvocatoria. 
+          (Esto requiere la opción 'nombre de archivo'). Por ejemplo, si tiene
+           "./views/users.ejs" y "./views/user/show.ejs", usaría &lt;%- include('user/show'); %&gt;.</p>
+
+        <p>Es probable que desee utilizar la etiqueta de salida sin formato
+           ( &lt;%-) con su inclusión para evitar el doble escape de la salida HTML.</p>
+        
+        <div class="install">
+          <code>
+            &lt;ul&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;% users.forEach(function(user){ %&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%- include('user/show', {user: user}); &gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;% }); %&gt;
+            &lt;/ul
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Diseños">
+      <header>Diseños</header>
+      <article>
+        <p>EJS no admite bloques específicamente, pero los diseños se pueden implementar 
+          al incluir encabezados y pies de página, así:</p>
+        
+        <div class="install">
+          <code>
+            &lt;%- include('header'); -%&gt;
+            &lt;h1&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;Title
+            &lt;/h1&gt;
+            &lt;p&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;My page
+            &lt;/p&gt;
+            &lt;%- include('footer'); -%&gt;
+          </code>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Soporte_del_lado_del_cliente">
+      <header>Soporte del lado del cliente</header>
+      <article>
+        <p>Vaya a la última versión , descargue ./ejs.jso ./ejs.min.js. Alternativamente, 
+          puede compilarlo usted mismo clonando el repositorio y ejecutándolo jake 
+          build(o $(npm bin)/jake buildsi jake no está instalado globalmente).</p>
+      </article>
+    </section>
+    <section class="main-section" id="Licencia">
+      <header>Licencia</header>
+      <article>
+        <ul>
+          <li>
+            EJS tiene licencia de Apache License, versión 2.0. Puede encontrar información aquí:
+            <a href="http://www.apache.org/licenses/" target="_blank">http://www.apache.org/licenses/</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+    
+</body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
